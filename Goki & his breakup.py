@@ -1,0 +1,9 @@
+x=int(input())
+y=int(input())
+while(x):
+    z=int(input())
+    if(z>=y):
+        print("YES")
+    else:
+        print("NO")
+    x-=1

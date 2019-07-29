@@ -1,0 +1,19 @@
+dist,normal,n=input().split()
+dist=int(dist)
+normal=int(normal)
+n=int(n)
+dict={}
+while(n):
+    x,y=input().split()
+    x=int(x)
+    y=int(y)
+    dict[x]=y
+    n-=1
+k=1
+while(dist>0):
+    if k in dict:
+        dist=dist-dict.get(k)
+    else:
+        dist=dist-normal
+    k+=1
+print(k-1)

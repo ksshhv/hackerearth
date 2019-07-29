@@ -1,0 +1,13 @@
+x=input()
+y=1
+count=1
+mx=1
+while(y<len(x)):
+    if(x[y]!=x[y-1]):
+        count+=1
+    else:
+        count=1
+    if(count>mx):
+        mx=count
+    y+=1
+print(mx)
