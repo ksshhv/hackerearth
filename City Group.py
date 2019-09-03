@@ -1,0 +1,26 @@
+x,y=input().split()
+x=int(x)
+y=int(y)
+l=1
+m={}
+while(l<=y):
+    p=list(map(int,input().split()))
+    q=p[0]
+    n=1
+    s=[]
+    while(q):
+        m[p[n]]=l
+        n+=1
+        q-=1
+    l+=1
+print(m)
+c=int(input())
+while(c):
+    a,b=input().split()
+    a=int(a)
+    b=int(b)
+    ag=m.get(a)
+    bg=m.get(b)
+    print(min(max(ag,bg)-min(ag,bg),y-max(ag,bg)+min(ag,bg)))
+    c-=1
+

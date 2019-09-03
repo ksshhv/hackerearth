@@ -1,0 +1,19 @@
+x=int(input())
+z=0
+y=[]
+while(z<x):
+    y.append(int(input()))
+    z+=1
+k=2
+while(k<max(y)):
+    l=1
+    flag=0
+    m=y[0]%k
+    while(l<len(y)):
+        if(y[l]%k!=m):
+            flag=1
+            break
+        l+=1
+    if(flag==0):
+        print(k)
+    k+=1

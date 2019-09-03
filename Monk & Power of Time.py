@@ -1,0 +1,15 @@
+x=int(input())
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+count=0
+while(len(l)>0):
+    if(l[0]==m[0]):
+        l.remove(l[0])
+        m.remove(m[0])
+        count+=1
+    else:
+        k=l[0]
+        l.append(k)
+        l.remove(l[0])
+        count+=1
+print(count)

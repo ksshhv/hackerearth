@@ -1,0 +1,16 @@
+x=int(input())
+while(x):
+    s=int(input())
+    l=list(map(int,input().split()))
+    a=0
+    sm=sum(l)
+    key=0
+    while(a<s):
+        if(l[a]>=sm/2):
+            key=1
+            print("No")
+            break
+        a+=1
+    if(key==0):
+        print("Yes")
+    x-=1

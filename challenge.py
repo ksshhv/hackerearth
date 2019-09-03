@@ -1,0 +1,15 @@
+x=int(input())
+sum=0
+a=0
+curr=0
+while(x):
+    y=int(input())
+    if(y>a):
+        curr+=1
+    else:
+        curr=1
+    a=y
+    print(curr)
+    sum+=curr
+    x-=1
+print(sum)
