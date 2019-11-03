@@ -1,0 +1,11 @@
+x,y,s,t=map(int,input().split())
+k=x
+count=0
+while(k<x+s+1):
+    l=y
+    while(l<y+s+1):
+        if(k+l<=t):
+            count+=1
+        l+=1
+    k+=1
+print(count)
